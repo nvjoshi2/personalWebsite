@@ -1,3 +1,9 @@
+/* map  stuff */
+.about-outer-container {
+    position:relative;
+}
+
+
 .about-container {
     justify-content: start;
     animation: fadeInAnimation ease 1s; 
@@ -5,7 +11,10 @@
     animation-fill-mode: forwards; 
     margin:40px;
     margin-top: 10px;
+    /* z-index: 10; */
 }
+
+
 
 .about-header {
     margin-bottom: 10px;
@@ -55,12 +64,14 @@
 
 .about-body a {
     text-decoration: none;
-    color: #fff;
+    color: #A9A9A9;
+    font-weight: bold;
     transition: color 0.2s linear;
 }
 .about-body a:hover {
     color: #747474;
 }
+
 
 .about-body-left {
     padding-right: 50px;
