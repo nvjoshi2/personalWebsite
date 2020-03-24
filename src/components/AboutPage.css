@@ -55,7 +55,7 @@
 
 .about-body a {
     text-decoration: none;
-    color: #A9A9A9;
+    color: #fff;
     transition: color 0.2s linear;
 }
 .about-body a:hover {
