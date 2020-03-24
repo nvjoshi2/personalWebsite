@@ -19,16 +19,16 @@
     margin: 18px;
     text-decoration: none;
     font-size: 17px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid rgb(0,0,0,0);
     border-bottom-width: 20%;
     transition: border-bottom 0.4s ease;
 }
 
-.topnav a:hover {
+/* .topnav a:hover {
     border-bottom: 2px solid black;  
-}
+} */
 
-/* .topnav a.home-inactive:hover {
+.topnav a.home-inactive:hover {
     border-bottom: 2px solid #FF652F;
 }
 
@@ -51,4 +51,4 @@
 
 .topnav a.portfolio-active {
     border-bottom: 2px solid #FFe400;
-} */
+}
