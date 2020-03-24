@@ -7,6 +7,7 @@ import AboutPage from './components/pages/AboutPage';
 import PortfolioPage from './components/pages/PortfolioPage';
 import HomePage from './components/pages/HomePage';
 import NavBar from './components/NavBar';
+
 function App() {
   return (
     <Router history = {history}>
