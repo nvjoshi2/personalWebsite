@@ -1,0 +1,148 @@
+.about-container {
+    justify-content: start;
+    animation: fadeInAnimation ease 1s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.about-header {
+    margin-bottom: 10px;
+}
+.about-wrapper {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.about-body {
+    display:flex;
+    flex-direction: row;
+}
+
+.about-body-left {
+    max-width: 55%;
+}
+
+.about-intro {
+    margin-bottom: 3rem;
+}
+
+.about-header {
+    border-bottom: 2px solid #FF652F ;
+    display: inline-block;
+}
+
+.about-work-header {
+    border-bottom: 2px solid #14A76C;
+    display: inline-block;
+}
+
+.about-body li {
+    color: #A9A9A9;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.about-body a {
+    text-decoration: none;
+    color: #A9A9A9;
+    transition: color 0.2s linear;
+}
+.about-body a:hover {
+    color: #747474;
+}
+
+.about-body-left {
+    padding-right: 50px;
+}
+
+.about-connect {
+    margin-bottom: 3rem;
+}
+
+.about-connect-header {
+    border-bottom: 2px solid #FFe400;
+    display: inline-block
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+}
+
+
+p {
+    color: #A9A9A9;
+    font-weight: 300;
+    line-height: 25px;
+    /* word-spacing: 3px; */
+}
+
+
+
+.picture {
+    height: 600px;
+    width: 400px;
+    /* margin-left: 200px; */
+    border-radius: 0.5rem;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    background: #272727;
+    z-index: 0;
+    height: 10%;
+    vertical-align: middle;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+
+}
+.about-body-right-container {
+    position: relative;
+}
+
+.text {
+    color: #CDCDCD;
+    text-align: center;
+    padding-top: 1rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.about-body-right-container:hover .middle {
+    opacity: 0.8;
+  }
+  
+.icon {
+    height: 20px;
+    width: 20px;
+    padding-right: 7px;
+}
+
+.about-body-right p {
+    text-align: center;
+}
+
+.caption {
+    padding-top: 6px;
+}
+
+
+
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
