@@ -3,24 +3,35 @@
     animation: fadeInAnimation ease 1s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
+    margin:40px;
+    margin-top: 10px;
 }
 
 .about-header {
     margin-bottom: 10px;
 }
-.about-wrapper {
-    margin-left: 100px;
-    margin-top: 20px;
-}
 
-.about-body {
+.about-wrapper .about-body {
+    text-align: left;
     display:flex;
     flex-direction: row;
 }
 
-.about-body-left {
-    max-width: 55%;
+
+.about-wrapper .about-body .about-body-left{
+    margin-right: 40px;
+    width: 65%;
 }
+.about-wrapper .about-body .about-body-right{
+    margin-right: 0;
+    width: 35%;
+}
+
+
+
+/* .about-body-left {
+    max-width: 55%;
+} */
 
 .about-intro {
     margin-bottom: 3rem;
@@ -146,3 +157,14 @@ p {
         opacity: 1; 
      } 
 } 
+
+@media (max-width: 770px) {
+	.about-wrapper .about-body .about-body-left {
+		margin-right: 0px;
+		width: 100%;
+	}
+
+	.about-wrapper .about-body .about-body-right {
+		display: none;
+	}
+}

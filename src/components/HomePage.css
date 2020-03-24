@@ -5,7 +5,7 @@
 }
 
 body, html {
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .home-container {
@@ -29,11 +29,12 @@ body, html {
   position: relative;
   display: flex;
   align-items: center;
-  height: 80px;
+  /* height: 80px; */
+  overflow:auto;
 }
 .home-container .box .title .block {
   width: 0%;
-  height: inherit;
+  height: 100%;
   background: #FF652F;
   position: absolute;
   animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
@@ -73,12 +74,13 @@ body, html {
   position: relative;
   display: flex;
   align-items: center;
-  height: 30px;
+  /* height: 30px; */
+  overflow:auto;
   /* margin-top: -10px; */
 }
 .home-container .box .role .block {
   width: 0%;
-  height: inherit;
+  height: 100%;
   background: #14A76C;
   position: absolute;
   animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
