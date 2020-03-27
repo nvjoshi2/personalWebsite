@@ -19,7 +19,7 @@ const AboutPage = (props) => {
                                 I'm Nathan Joshi, a soon to be graduate of the University of Illinois
                                 at Urbana-Champaign studying Industrial Engineering with a minor in Computer Science. 
                                 I found programming to be far and above the most fun and fulfilling experience in my academic career
-                                so I made a hobby of and pursued a minor it. It is now my goal to make a career out of it and
+                                so I made a hobby of and pursued a minor in it. It is now my goal to make a career out of it and
                                 I could not be more excited. <br/>
                                 <br/>
                                 Besides coding I enjoy playing table tennis, going to concerts,
