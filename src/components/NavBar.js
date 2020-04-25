@@ -29,7 +29,8 @@ const NavBar = (props) => {
 
         <header>
             <div className = "topnav">
-                {/* <Link className={'portfolio-' + isActive('/portfolio')} to='/portfolio'>Portfolio</Link> */}
+                <Link className={'portfolio-' + isActive('/portfolio')} to='/portfolio'>Portfolio</Link>
+                
                 <Link className={'about-' + isActive('/about')} to='/about'>About</Link>
                 <Link className={'home-' + isActive('/')} to='/'>Home</Link>
             </div>

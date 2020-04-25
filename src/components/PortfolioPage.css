@@ -1,0 +1,74 @@
+.portfolio-container {
+    justify-content: center;
+    animation: fadeInAnimation ease 1s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    margin:40px;
+    margin-top: 10px;
+}
+.portfolio-item {
+    /* background-image: url("/timeit_screenshot.png"); */
+    width: 400px;
+    height: 249px;
+    margin: auto;
+    /* margin-right: 0; */
+
+}
+
+
+.website-image {
+    position: absolute;
+    width: 400px;
+    height:auto;
+    border-radius: 10px;
+}
+
+.overlay {
+    transition: 0.5s ease;
+    position: absolute; 
+    z-index: 1;
+    height: 249px;
+    width: 400px;
+    background-color: transparent;
+    text-align: center;
+    background-color: black;
+    opacity: 0;
+    border-radius: 10px;
+    
+}
+
+.visit-button a {
+    background:none;
+    /* border: white 2px solid; */
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: white 2px solid;
+
+    
+}
+.visit-button {
+    background-color: transparent;
+    display: inline-block;
+    /* padding: 0.5rem; */
+    
+    
+}
+
+h3 {
+    background: transparent;
+}
+
+h3.title {
+    margin-top: 75px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 0.7;
+}
