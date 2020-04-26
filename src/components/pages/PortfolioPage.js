@@ -10,7 +10,7 @@ const PortfolioPage = (props) => {
                 <div className = 'overlay'>
                     <h3 className = 'title'>TimeIt</h3>
                     <div className = 'visit-button'>
-                        <a href="http://timeapp-frontend.s3-website-us-east-1.amazonaws.com/" target="_blank">Visit</a>
+                        <a href="http://timeit.me.s3-website-us-east-1.amazonaws.com/" target="_blank">Visit</a>
                     </div>
                 </div>
             </div>
