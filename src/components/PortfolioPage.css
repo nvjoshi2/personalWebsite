@@ -1,11 +1,12 @@
 .portfolio-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     animation: fadeInAnimation ease 1s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
+    flex-wrap: wrap;
     margin:40px;
     margin-top: 10px;
     height: 70vh;
@@ -13,8 +14,9 @@
 .portfolio-item {
     /* background-image: url("/timeit_screenshot.png"); */
     width: 400px;
-    height: 249px;
-    margin: auto;
+    height: 250px;
+    /* margin: auto; */
+    position: relative;
 
 }
 
@@ -22,7 +24,7 @@
 .website-image {
     position: absolute;
     width: 400px;
-    height:249px;
+    height:250px;
     border-radius: 10px;
 }
 
@@ -30,7 +32,7 @@
     transition: 0.5s ease;
     position: absolute; 
     z-index: 1;
-    height: 249px;
+    height: 250px;
     width: 400px;
     text-align: center;
     background-color: rgb(0, 0, 0, 0);
@@ -59,7 +61,7 @@
     /* padding: 0.5rem; */
     
 }
-.title {
+.name {
     opacity: 0;
     transition: 0.5s ease;
 }
@@ -68,7 +70,7 @@ h3 {
     background: transparent;
 }
 
-h3.title {
+h3.name {
     margin-top: 75px;
     margin-bottom: 20px;
     font-size: 40px;
@@ -79,7 +81,7 @@ h3.title {
 .portfolio-item:hover .visit-button  {
     opacity: 1;
 }
-.portfolio-item:hover .title  {
+.portfolio-item:hover .name  {
     opacity: 1;
 }
 .portfolio-item:hover .overlay  {
@@ -89,3 +91,24 @@ h3.title {
 /* .portfolio-item:hover .website-image {
     opacity: 0.7;
 } */
+
+@media (max-width: 500px) {
+    .portfolio-item {
+        width: 300px;
+        height: 187.5px;
+
+    
+    }
+    .website-image {
+        width: 300px;
+        height:187.5px;
+    }
+    .overlay {
+        width: 300px;
+        height:187.5px;
+    }
+    h3.name {
+        margin-top: 40px;
+
+    }
+}
