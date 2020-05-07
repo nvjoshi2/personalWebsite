@@ -102,8 +102,8 @@ p {
 
 
 .picture {
-    height: 600px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     /* margin-left: 200px; */
     border-radius: 0.5rem;
     opacity: 1;
@@ -129,6 +129,10 @@ p {
 }
 .about-body-right-container {
     position: relative;
+    width: 25vw;
+    height: auto;
+    /* height: 600px;
+    width: 400px; */
 }
 
 .text {
