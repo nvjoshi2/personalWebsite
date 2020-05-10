@@ -29,6 +29,7 @@ const NavBar = (props) => {
 
         <header>
             <div className = "topnav">
+                <Link className={'mom-' + isActive('/mom')} to='/mom'>Mom</Link>
                 <Link className={'portfolio-' + isActive('/portfolio')} to='/portfolio'>Portfolio</Link>
                 
                 <Link className={'about-' + isActive('/about')} to='/about'>About</Link>

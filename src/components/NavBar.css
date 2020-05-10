@@ -51,3 +51,12 @@
 .topnav a.portfolio-active {
     border-bottom: 2px solid #FFe400;
 }
+
+
+.topnav a.mom-inactive:hover {
+    border-bottom: 2px solid rgb(31, 129, 209);
+}
+
+.topnav a.mom-active {
+    border-bottom: 2px solid rgb(31, 129, 209);
+}

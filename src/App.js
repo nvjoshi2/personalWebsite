@@ -7,6 +7,7 @@ import AboutPage from './components/pages/AboutPage';
 import PortfolioPage from './components/pages/PortfolioPage';
 import HomePage from './components/pages/HomePage';
 import NavBar from './components/NavBar';
+import MomPage from './components/pages/MomPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' exact component={HomePage}/>
         <Route path='/about' exact component={AboutPage}/>
         <Route path='/portfolio' exact component={PortfolioPage}/>
+        <Route path='/mom' exact component={MomPage}/>
         </Switch>
     </div>
     </Router>
