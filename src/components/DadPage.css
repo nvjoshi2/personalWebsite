@@ -35,7 +35,13 @@
 }
 
 @media (max-width: 550px) {
-    img {
-        height: 15rem;
+    .dad-pic {
+        opacity: 1;
+        height: 20rem;
+    }
+    .video-background,
+    .video-foreground,
+    .iframe {
+        opacity: 0
     }
 }
