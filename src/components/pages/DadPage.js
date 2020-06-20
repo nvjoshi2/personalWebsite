@@ -4,7 +4,7 @@ import YoutubeBackground from 'react-youtube-background';
 
 import Helmet from 'react-helmet'
 import YouTube from 'react-youtube';
-// import Faded from '../../faded.mp4';
+import Faded from '../../faded.mp4';
 import ReactPlayer from 'react-player';
 import '../DadPage.css'
 function DadPage() {
@@ -46,11 +46,15 @@ function DadPage() {
             //   onPlay={(event) => event.target.playVideo()}
             
             /> */}
-            {/* <video autoPlay="autoplay" loop="loop">
+            {/* <video autoPlay="autoPlay" loop="loop">
                 <source src={Faded} type="video/mp4"/>
                 Your browser dont support
             </video> */}
-            <ReactPlayer url= {videoSource} playing={true} loop={true}/>
+            <ReactPlayer url= {videoSource} playing={false} loop={true} muted={true} onReady={(event) => {
+                console.log(event.player.player)
+                event.player.player.player.playVideo()
+                event.player.player.unmute()
+            }}/>
           </div>
         </div>
       </div>
