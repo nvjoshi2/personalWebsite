@@ -12,17 +12,18 @@ function DadPage() {
 
     const videoOptions = {
         playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 1,
+        // autoplay: 1,
         controls: 0,
         rel: 0,
         showinfo: 0,
         start: 25,
-        loop: 1
+        loop: 1,
+        mute: 1
         }
     }
 
     var videoSource = 'https://www.youtube.com/watch?v=CVvJp3d8xGQ';
-    videoSource = 'https://youtu.be/CVvJp3d8xGQ?t=25'
+    videoSource = 'https://youtu.be/CVvJp3d8xGQ?t=25?&mute=1'
     return (
         <div>
         <div className='wrapper'>
@@ -37,7 +38,11 @@ function DadPage() {
               videoId="CVvJp3d8xGQ"
               opts={videoOptions}
               className="video-iframe"
-              onReady={(event) => event.target.playVideo()}
+              onReady={(event) => {
+                  event.target.playVideo()
+                  event.target.unMute()
+                  console.log(event.target)
+                }}
               onEnd={(event) => event.target.playVideo()}
             //   onPause={(event) => event.target.playVideo()}
             //   onError={(event) => event.target.playVideo()}
@@ -48,9 +53,9 @@ function DadPage() {
                 <source src={Faded} type="video/mp4"/>
                 Your browser dont support
             </video> */}
-            {/* <ReactPlayer url= {videoSource} playing={true} loop={true} muted={true} onReady={(event) => {
+            {/* <ReactPlayer url= {videoSource} playing={false} loop={true} onReady={(event) => {
                 console.log(event.player.player)
-                // event.player.player.player.playVideo()
+                event.player.player.player.playVideo()
                 event.player.player.unmute()
             }}/> */}
           </div>
