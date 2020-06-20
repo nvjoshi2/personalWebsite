@@ -25,34 +25,17 @@ function DadPage() {
     videoSource = 'https://youtu.be/CVvJp3d8xGQ?t=25'
     return (
         <div>
-        {/* <div className='wrapper'>
+        <div className='wrapper'>
             <div className='mom-title'>Happy Fathers Day Dad!!!</div>
                 <img className='dad-pic' src={DadPic} />
-        </div> */}
+        </div>
         <div className={`body is-article-visible`}>
   
         <div className="video-background">
           <div className="video-foreground">
-            {/* <YouTube
-              videoId="CVvJp3d8xGQ"
-              opts={videoOptions}
-              className="video-iframe"
-              onReady={(event) => event.target.playVideo()}
-              onEnd={(event) => event.target.playVideo()}
-              onPlaybackRateChange={(event) => event.target.playVideo()}
-              onPlaybackQualityChange={(event) => event.target.playVideo()}
-            //   onPause={(event) => event.target.playVideo()}
-            //   onError={(event) => event.target.playVideo()}
-            //   onPlay={(event) => event.target.playVideo()}
-            
-            /> */}
-            {/* <video autoPlay="autoPlay" loop="loop">
-                <source src={Faded} type="video/mp4"/>
-                Your browser dont support
-            </video> */}
-            <ReactPlayer url= {videoSource} playing={false} loop={true} muted={true} onReady={(event) => {
+            <ReactPlayer url= {videoSource} playing={true} loop={true} muted={true} onReady={(event) => {
                 console.log(event.player.player)
-                event.player.player.player.playVideo()
+                // event.player.player.player.playVideo()
                 event.player.player.unmute()
             }}/>
           </div>
