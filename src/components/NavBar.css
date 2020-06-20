@@ -2,12 +2,26 @@
 .topnav {
     overflow: hidden;
     padding-right: 2rem;
-    background: #272727;
+    display: flex;
+    flex-direction: row;
+    /* background: #272727; */
+}
+
+.dad-inactive {
+    background: #272727; 
+}
+
+.dad-active  {
+    justify-content: center;
+}
+
+.dad-inactive {
+   justify-content: flex-end;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: right;
+    /* float: right; */
     /* padding-right: 10px; */
     /* padding-left: 10px; */
     font-weight: bold;

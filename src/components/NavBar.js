@@ -28,11 +28,11 @@ const NavBar = (props) => {
         // </header>
 
         <header>
-            <div className = "topnav">
-                <Link className={'portfolio-' + isActive('/portfolio')} to='/portfolio'>Portfolio</Link>
-                
-                <Link className={'about-' + isActive('/about')} to='/about'>About</Link>
+            <div className = {"topnav dad-" + isActive('/dad')}>
                 <Link className={'home-' + isActive('/')} to='/'>Home</Link>
+                <Link className={'about-' + isActive('/about')} to='/about'>About</Link>
+                <Link className={'portfolio-' + isActive('/portfolio')} to='/portfolio'>Portfolio</Link>
+                {/* <Link className={'mom-' + isActive('/dad')} to='/dad'>Dad</Link> */}
             </div>
         </header>
 

@@ -8,6 +8,7 @@ import PortfolioPage from './components/pages/PortfolioPage';
 import HomePage from './components/pages/HomePage';
 import NavBar from './components/NavBar';
 import MomPage from './components/pages/MomPage';
+import DadPage from './components/pages/DadPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/about' exact component={AboutPage}/>
         <Route path='/portfolio' exact component={PortfolioPage}/>
         <Route path='/mom' exact component={MomPage}/>
+        <Route path='/dad' exact component={DadPage}/>
         </Switch>
     </div>
     </Router>
