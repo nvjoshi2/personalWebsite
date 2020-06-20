@@ -25,10 +25,10 @@ function DadPage() {
     videoSource = 'https://youtu.be/CVvJp3d8xGQ?t=25'
     return (
         <div>
-        <div className='wrapper'>
+        {/* <div className='wrapper'>
             <div className='mom-title'>Happy Fathers Day Dad!!!</div>
                 <img className='dad-pic' src={DadPic} />
-        </div>
+        </div> */}
         <div className={`body is-article-visible`}>
   
         <div className="video-background">
