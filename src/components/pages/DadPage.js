@@ -4,7 +4,7 @@ import YoutubeBackground from 'react-youtube-background';
 
 import Helmet from 'react-helmet'
 import YouTube from 'react-youtube';
-import Faded from '../../faded.mp4';
+// import Faded from '../../faded.mp4';
 import ReactPlayer from 'react-player';
 import '../DadPage.css'
 function DadPage() {
