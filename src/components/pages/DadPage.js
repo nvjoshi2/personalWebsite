@@ -7,22 +7,10 @@ import YouTube from 'react-youtube';
 import '../DadPage.css'
 function DadPage() {
 
-    function _onReady(event) {
-        // access to player in all event handlers via event.target
-        // event.target.mute();
-        event.target.playVideo();
-    };
-      
-    function _onEnd(event) {
-        event.target.playVideo();
-    };
-      
- 
- 
-      
+
     const videoOptions = {
         playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 1,
+        autoplay: 0,
         controls: 0,
         rel: 0,
         showinfo: 0,
@@ -46,8 +34,8 @@ function DadPage() {
               videoId="CVvJp3d8xGQ"
               opts={videoOptions}
               className="video-iframe"
-              onReady={_onReady}
-              onEnd={_onEnd}
+              onReady={(event) => event.target.playVideo()}
+              onEnd={(event) => event.target.playVideo()}
             />
           </div>
         </div>
