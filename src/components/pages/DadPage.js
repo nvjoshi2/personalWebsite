@@ -33,11 +33,26 @@ function DadPage() {
   
         <div className="video-background">
           <div className="video-foreground">
-            <ReactPlayer url= {videoSource} playing={true} loop={true} muted={true} onReady={(event) => {
+            <YouTube
+              videoId="CVvJp3d8xGQ"
+              opts={videoOptions}
+              className="video-iframe"
+              onReady={(event) => event.target.playVideo()}
+              onEnd={(event) => event.target.playVideo()}
+            //   onPause={(event) => event.target.playVideo()}
+            //   onError={(event) => event.target.playVideo()}
+            //   onPlay={(event) => event.target.playVideo()}
+            
+            />
+            {/* <video autoPlay="autoPlay" loop="loop">
+                <source src={Faded} type="video/mp4"/>
+                Your browser dont support
+            </video> */}
+            {/* <ReactPlayer url= {videoSource} playing={true} loop={true} muted={true} onReady={(event) => {
                 console.log(event.player.player)
                 // event.player.player.player.playVideo()
                 event.player.player.unmute()
-            }}/>
+            }}/> */}
           </div>
         </div>
       </div>
