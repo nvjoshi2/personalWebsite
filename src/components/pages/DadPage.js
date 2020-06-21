@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import DadPic from '../../dad_zhu_pic.jpg';
 import YoutubeBackground from 'react-youtube-background';
 
@@ -8,11 +8,9 @@ import YouTube from 'react-youtube';
 import ReactPlayer from 'react-player';
 import '../DadPage.css'
 function DadPage() {
-
-
     const videoOptions = {
         playerVars: { // https://developers.google.com/youtube/player_parameters
-        // autoplay: 1,
+        autoplay: 1,
         controls: 0,
         rel: 0,
         showinfo: 0,
@@ -23,7 +21,7 @@ function DadPage() {
     }
 
     var videoSource = 'https://www.youtube.com/watch?v=CVvJp3d8xGQ';
-    videoSource = 'https://youtu.be/CVvJp3d8xGQ?t=25?&mute=1'
+    // videoSource = 'https://youtu.be/CVvJp3d8xGQ?t=25?&mute=1'
     return (
         <div>
         <div className='wrapper'>
@@ -41,7 +39,6 @@ function DadPage() {
               onReady={(event) => {
                   event.target.playVideo()
                   event.target.unMute()
-                  console.log(event.target)
                 }}
               onEnd={(event) => event.target.playVideo()}
             //   onPause={(event) => event.target.playVideo()}

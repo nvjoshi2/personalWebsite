@@ -32,7 +32,7 @@ const NavBar = (props) => {
                 <Link className={'home-' + isActive('/')} to='/'>Home</Link>
                 <Link className={'about-' + isActive('/about')} to='/about'>About</Link>
                 <Link className={'portfolio-' + isActive('/portfolio')} to='/portfolio'>Portfolio</Link>
-                {/* <Link className={'mom-' + isActive('/dad')} to='/dad'>Dad</Link> */}
+                <Link className={'mom-' + isActive('/dad')} to='/dad'>Dad</Link>
             </div>
         </header>
 
