@@ -13,20 +13,6 @@ const NavBar = (props) => {
         }
     }
     return (
-        // <header className="navbar">
-        //     <nav className="navbar__navigation">
-        //         <div></div>
-        //         <div className='spacer'/>
-        //         <div className="navbar_navigation-items">
-        //             <ul>
-        //                 <li><Link className={isActive('/')} to='/'>Home</Link></li>
-        //                 <li><Link className={isActive('/about')} to='/about'>About</Link></li>
-        //                 <li><Link className={isActive('/portfolio')} to='/portfolio'>Portfolio</Link></li>
-        //             </ul>
-        //         </div>
-        //     </nav>
-        // </header>
-
         <header>
             <div className = {"topnav dad-" + isActive('/dad')}>
                 <Link className={'home-' + isActive('/')} to='/'>Home</Link>

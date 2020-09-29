@@ -8,7 +8,6 @@ import linkedin_icon from '../../linkedin_icon.png';
 import email_icon from '../../email_icon.png';
 import resume_icon from '../../resume_icon.png';
 const AboutPage = (props) => {
-
     return (
             <div className = "about-wrapper about-container">
                 <div className= 'about-header'><h1>About me</h1></div>
@@ -30,6 +29,7 @@ const AboutPage = (props) => {
                         <div className='about-work'>
                             <div className='about-work-header'><h1>Work Experience</h1></div>
                             <ul>
+                            <li><p><a href='https://laytra.com/' target="_blank" rel="noopener noreferrer">Laytra</a>, Software Engineer (June 2020 - present)</p></li>
                                 <li><p><a href='https://sambasafety.com/' target="_blank" rel="noopener noreferrer">Samba Safety</a>, Data Science Intern (May 2019 - August 2019)</p></li>
                                 <li><p><a href='https://www.itascaplastics.com/' target="_blank" rel="noopener noreferrer">Itasca Plastics</a>, Engineering Intern (May 2018 - August 2018)</p></li>
                             </ul>

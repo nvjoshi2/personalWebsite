@@ -11,8 +11,12 @@
     animation-fill-mode: forwards; 
     margin:40px;
     margin-top: 10px;
-    /* z-index: 10; */
 }
+
+.about-container li {
+  margin-left: 1rem;
+}
+
 
 
 
